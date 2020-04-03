@@ -1,0 +1,6 @@
+
+df<- data.frame(id=seq(1:10),nombres=c("edgar","Edgar","EDGAR","Rosa","ROSA",
+                                       "JOSE","jose","Mariana","mariana","MARIANA"))
+f1<-df %>%
+  filter(str_detect(nombres, 'Edgar|EDGAR|edgar'))
+f1
