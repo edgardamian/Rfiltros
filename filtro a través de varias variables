@@ -1,0 +1,2 @@
+salud<-suelo %>% 
+   filter_at(vars(Uso1, Uso2, Uso3), any_vars(str_detect(., regex('csr 1|csu 2|csh 3|hg 4|umf 5|hg1 6|umf 7|mr 8|cmf 9|ch 10|hg2 11|hr 12|ps 13|cu 14|h 3er n 15', ignore_case = TRUE) )))
